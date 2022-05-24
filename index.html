@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .todo-wrapper {
+        padding: 0;
+        min-height: 500px;
+        width: 30%;
+        border: 5px solid black;
+        list-style: none;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .todo-item {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 2px 2px;
+        margin-bottom: 7px;
+        background-color: aqua;
+
+      }
+      .statuses-list-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .todo-wrapper.entered {
+        border-color: green;
+        background-color: green;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div class="statuses-list-wrapper">
+      <ul class="todo-wrapper">
+      <li id="item-1" class="todo-item" draggable="true">Item-1</li>
+      <li id="item-2" class="todo-item" draggable="true">Item-2</li>
+      <li id="item-3" class="todo-item" draggable="true">Item-3</li>
+      <li id="item-4" class="todo-item" draggable="true">Item-4</li>
+    </ul>  
+    <ul class="todo-wrapper"></ul>  
+    <ul class="todo-wrapper"></ul>
+    </div>  
+    <script src="./main.js"></script>
+  </body>
+</html>
